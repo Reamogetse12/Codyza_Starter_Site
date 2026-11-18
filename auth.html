@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Join Codyza</title>
+</head>
+<body class="auth-page">
+    <nav>
+        <ul>
+            <li class="nav-logo"><a href="site.html#hero" aria-label="Codyza home"><img src="images/codyza.png" alt="Codyza"></a></li>
+            <li><a href="site.html#hero">Back to home</a></li>
+        </ul>
+    </nav>
+
+    <main class="auth-main">
+        <section class="auth-card" aria-labelledby="auth-title">
+            <span class="eyebrow">Your next step</span>
+            <h1 id="auth-title">Join the Codyza community</h1>
+            <p class="auth-intro">Create an account or sign in to continue.</p>
+
+            <div class="auth-switch" aria-label="Choose an account option">
+                <button type="button" class="auth-option is-selected" data-auth-mode="register" aria-pressed="true">Register</button>
+                <button type="button" class="auth-option" data-auth-mode="login" aria-pressed="false">Log in</button>
+            </div>
+
+            <form class="auth-form" id="register-form">
+                <label for="register-name">Name</label>
+                <input type="text" id="register-name" name="name" autocomplete="name" required>
+
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" autocomplete="email" required>
+
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="password" autocomplete="new-password" minlength="8" required>
+
+                <button type="submit">Create account</button>
+            </form>
+
+            <form class="auth-form" id="login-form" hidden>
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" autocomplete="email" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" autocomplete="current-password" required>
+
+                <button type="submit">Log in</button>
+            </form>
+
+            <p class="auth-status" id="auth-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Codyza Starter Site. All rights reserved.</p>
+        <p>Powered by <a href="https://codyza.com">Codyza</a></p>
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>

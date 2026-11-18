@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Codyza Starter Site</title>
+</head>
+<body>
+    <!--navigation bar-->
+    <nav>
+        <ul>
+            <li class="nav-logo"><a href="#hero" aria-label="Codyza home"><img src="images/codyza.png" alt="Codyza"></a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="hero">
+        <div class="hero-content">
+            <span class="eyebrow">Built for developers</span>
+            <h1>Welcome to Codyza Starter Site</h1>
+            <p>Your journey to becoming a better developer starts here.</p>
+            <p>Join our community of developers and start building real projects today.</p>
+            <a href="auth.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Codyza is a developer community platform where contributors build real projects, earn XP, and grow their skills together. AI-powered code review, gamified progression, and team collaboration — all in one place. Invite-only. Free to join. Built for developers who ship. Apply at codyza.com</p>
+            <div class="about-image">
+                <img src="images/codyza_about.avif" alt="Codyza community" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="services">
+        <h2>How Codyza Helps Builders</h2>
+        <ul>
+            <li>
+                <h3>Build Real Projects</h3>
+                <p>Practice your skills by contributing to useful projects that ship.</p>
+            </li>
+            <li>
+                <h3>Collaborate with a Crew</h3>
+                <p>Work alongside developers and designers to build as a team.</p>
+            </li>
+            <li>
+                <h3>Get AI-Powered Code Review</h3>
+                <p>Use code feedback to improve your work and keep learning.</p>
+            </li>
+            <li>
+                <h3>Grow Your Skills</h3>
+                <p>Earn XP as you contribute and make progress as a builder.</p>
+            </li>
+            <li>
+                <h3>Showcase Shipped Work</h3>
+                <p>Build a public record of projects you have helped bring to life.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contacts">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Codyza Starter Site. All rights reserved.</p>
+        <p>Powered by <a href="https://codyza.com">Codyza</a></p>
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>
